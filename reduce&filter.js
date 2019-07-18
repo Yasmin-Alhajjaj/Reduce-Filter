@@ -287,9 +287,10 @@ var strings= [ 'return', 'phrases', 'with one word' ];
 Ex: onlyOneWord(strings) => [ 'return', 'phrases' ]
 */
 function onlyOneWord(arr){
+var result= arr.filter(word=>!(word.includes(" ")))
 
 
-
+return result;
 }
 console.log(onlyOneWord([ 'return', 'phrases', 'with one word' ]))
 
@@ -300,11 +301,21 @@ console.log(onlyOneWord([ 'return', 'phrases', 'with one word' ]))
 Using Filter
 Create a function called positiveRowsOnly
 that accept an array of array of numbers(matrix)
-and return only the rows in the matrix that have all positive integers
+and return only the rows in the matrix that have all
+ positive integers
 var numbers= [[ 1, 10, -100 ], [ 2, -20, 200 ],[ 3, 30,  300 ]];
 Ex: positiveRowsOnly(numbers) => [ 3, 30,  300 ]
 */
+function positiveRowsOnly(arr)
+{
+var result= arr.filter((elem)=>{})
 
+
+
+
+  return result;
+}
+console.log(positiveRowsOnly([[ 1, 10, -100 ], [ 2, -20, 200 ],[ 3, 30,  300 ]]))
 
 /*
 15
